@@ -1,2 +1,0 @@
-your_access_key
-your_secret_key
