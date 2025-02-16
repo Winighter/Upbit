@@ -254,7 +254,7 @@ class Upbit:
 
 if __name__ == "__main__":
 
-    with open("./upbit.key") as f:
+    with open("./upbit.py") as f:
         lines = f.readlines()
         access = lines[0].strip()
         secret = lines[1].strip()
