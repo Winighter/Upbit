@@ -211,7 +211,7 @@ class Upbit:
                     if bAmount*bid_price <= bBalance and bAmount*bid_price >= 5000: # 최소 주문 금액 5,000 원
 
                         Upbit.매수 = True
-                        print("매수 True")
+                        # print("매수 True")
                         Upbit.order("BUY", _symbol, bAmount, bid_price, "")
 
             # 하락 추세
@@ -221,10 +221,10 @@ class Upbit:
                 if close < ema12 and ema12 < ema26:
 
                     Upbit.매수 = True
-                    print("매도 True")
+                    # print("매도 True")
                     Upbit.order("SELL", _symbol, sAmount, 0, "")
-        print(Upbit.매수,Upbit.balance_dict)
-        print(Upbit.not_balance_dict,"\n")
+        # print(Upbit.매수,Upbit.balance_dict)
+        # print(Upbit.not_balance_dict,"\n")
         # Golden Cross
 
         # Death Cross
