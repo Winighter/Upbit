@@ -167,7 +167,7 @@ class Upbit:
     ### Quotation ###
     def min_candle_chart():
 
-        url = "https://api.upbit.com/v1/candles/minutes/10" # n분차트
+        url = "https://api.upbit.com/v1/candles/minutes/5" # n분차트
         querystring = {"market":"KRW-XRP","count":"51"} # count = 필요한 봉 갯수
         response = requests.request("GET", url, params=querystring)
         data = response.json()
