@@ -242,10 +242,7 @@ class Upbit:
                         Upbit.매수 = True
                         Upbit.cross = False
                         Upbit.order("BUY", _symbol, bAmount, bid_price, "")
-
-        print(Upbit.매수,Upbit.balance_dict)
-        print(Upbit.cross,Upbit.not_balance_dict,"\n")
-            
+   
         threading.Timer(1,self.min_candle_chart).start()
 
     def hoka(_symbol): # KRW-BTC
