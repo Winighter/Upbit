@@ -236,8 +236,6 @@ class Upbit:
                         new_hoka = float(Upbit.get_hoka(_symbol))
                         if price < new_hoka and remaining_volume > 0:
                             Upbit.order("CANCLE", symbol, remaining_volume, new_hoka, nb)
-        
-        print(f"\n{self.symbol}\n{self.balance_dict}\n{self.not_balance_dict}")
 
         threading.Timer(1,self.min_candle_chart).start()
 
