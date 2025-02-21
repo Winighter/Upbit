@@ -166,7 +166,7 @@ class Upbit:
 
         for _symbol in self.symbol:
             
-            url = "https://api.upbit.com/v1/candles/minutes/1" # n분차트
+            url = "https://api.upbit.com/v1/candles/minutes/10" # n분차트
             querystring = {"market":_symbol,"count":"51"} # count = 필요한 봉 갯수
             response = requests.request("GET", url, params=querystring)
             data = response.json()
