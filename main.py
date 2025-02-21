@@ -220,7 +220,6 @@ class Upbit:
                                         if deposit*amount > balance:
                                             pass
                                         else:
-                                            print(_symbol,bid_price,amount)
                                             Upbit.order("BUY", _symbol, amount, bid_price, "")
 
                 # 취소 및 재주문(재주문은 안되는 것 같음)
